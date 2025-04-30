@@ -25,7 +25,7 @@ This project is a simple interactive **Question-Answering** web application buil
 
 ```
 git clone https://github.com/Vurhd0/QA-App-using-Gemma-Model-with-Streamlit
-cd QA-App-using-Gemma-Model=with-Streamlit
+cd QA-App-using-Gemma-Model-with-Streamlit
 ```
 ### 2. Install Dependencies
 
