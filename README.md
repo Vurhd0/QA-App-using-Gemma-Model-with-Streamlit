@@ -23,8 +23,43 @@ This project is a simple interactive **Question-Answering** web application buil
 
 ### 1. Clone the repository
 
-```bash
+```
 git clone https://github.com/Vurhd0/QA-App-using-Gemma-Model-with-Streamlit
-cd langchain-gemma-streamlit
+cd QA-App-using-Gemma-Model=with-Streamlit
+```
+### 2. Install Dependencies
 
+```bash
+pip install -r requirements.txt
+```
+### 3. Set up .env
+Create a .env file in the project root and add the following variables:
+```
+LANGCHAIN_API_KEY=your_langchain_api_key
+LANGCHAIN_PROJECT=your_langchain_project_name
+```
+### 4. Start Ollama and Pull Gemma Model
+
+Install Ollama and run:
+```
+ollama pull gemma:2b
+```
+Ensure the Ollama server is running locally.
+
+## ▶️ Run the App
+```
+streamlit run app.py
+```
+
+## 🧠 How It Works
+- The user inputs a natural language question into the Streamlit app.
+
+- LangChain creates a structured prompt using ChatPromptTemplate.
+
+- The prompt is sent to the gemma:2b model running via Ollama.
+
+- The response is parsed and displayed back in the app UI.
+
+## 📸 Screenshot
+![image](https://github.com/user-attachments/assets/b2d5321e-ce28-4a64-a330-718ce3714c44)
 
