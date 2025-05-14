@@ -21,7 +21,14 @@ prompt=ChatPromptTemplate.from_messages(
 
     ]
 )
+## Prompt template
+prompt1=ChatPromptTemplate.from_messages(
+    [
+        ("system","You are a helpful assistant. please respond to the questions asked"),
+        ("user","Question:{question}" )
 
+    ]
+)
 st.title("Langchain Demo With Gemma Model")
 input_text=st.text_input("What question you have in mind?")
 
